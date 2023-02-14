@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: Netigen;
+  src: url('./fonts/netigen.otf');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: Outfit;
+  src: url("./fonts/Outfit/Outfit-VariableFont_wght.ttf"); 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: Outfit-Thin;
+  src: url("./fonts/Outfit/static/Outfit-Thin.ttf");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+:root {
+  --transparent: rgba(0,0,0,0);
+  --body-color: linear-gradient(rgb(22, 12, 12), rgb(25, 43, 35), rgb(49, 68, 64) 80%);
+  --menu-color: linear-gradient(rgba(0,0,0,0.6),rgba(68, 30, 30, 0.4),rgba(80, 8, 8, 0.6));
+  --text-color: #cccac3;
+  --header-font: 'Outfit', 'Courier New', Courier, monospace;
 }
 
-.App-link {
-  color: #61dafb;
+/*My page*/
+.hidden {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.divider {
+  border: 1px solid var(--text-color);
+}
+
+p {
+  color: var(--text-color);
+}
+
+h1 {
+  margin: 5px 0;
+  font-family: Outfit-Thin, var(--header-font);
+  color: var(--text-color);
+  font-size: 80px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* SIDE MENU */
+.Nav-tabs a {
+  font-family: var(--header-font);
+  text-decoration: none;
+  text-transform: capitalize;
+  fill: var(--text-color);
+}
+
+.Nav-tabs a:hover {
+  text-decoration: underline;
+}
+
+.Nav-tabs a:visited {
+  font-style: normal;
+  fill: var(--text-color);
+}
+
+.Nav-tabs > * {
+  display: block;
+  letter-spacing: 2px;
+  text-align: right;
+}
+
+
+/* FOOTER */
+footer a:hover {
+  text-decoration: underline;
+}
+
+.External-icons svg {
+  border-radius: 100%;
+  color: var(--text-color);
+  background-color: var(--transparent);
+}
+
+
+/* section */
+section img {
+  width: 400px;
+  margin-bottom: 20px;
+  border: 3px solid var(--text-color);
 }
