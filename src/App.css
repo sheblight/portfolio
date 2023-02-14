@@ -28,6 +28,7 @@
 
 .divider {
   border: 1px solid var(--text-color);
+  margin: auto 0;
 }
 
 p {
@@ -45,23 +46,23 @@ h1 {
 }
 
 /* SIDE MENU */
-.Nav-tabs a {
+.nav-tabs a {
   font-family: var(--header-font);
   text-decoration: none;
   text-transform: capitalize;
   fill: var(--text-color);
 }
 
-.Nav-tabs a:hover {
+.nav-tabs a:hover {
   text-decoration: underline;
 }
 
-.Nav-tabs a:visited {
+.nav-tabs a:visited {
   font-style: normal;
   fill: var(--text-color);
 }
 
-.Nav-tabs > * {
+.nav-tabs > * {
   display: block;
   letter-spacing: 2px;
   text-align: right;
@@ -73,7 +74,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-.External-icons svg {
+.external-icons svg {
   border-radius: 100%;
   color: var(--text-color);
   background-color: var(--transparent);
