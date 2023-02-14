@@ -19,6 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "http://sheblight.github.io/portfolio",
   "eslintConfig": {
     "extends": [
       "react-app",
