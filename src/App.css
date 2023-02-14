@@ -45,6 +45,16 @@ h1 {
   text-transform: uppercase;
 }
 
+.App {
+  display: grid;
+  grid-template-columns: 300px auto; 
+  grid-template-areas: 100vh;
+  height: 100vh;
+  background: var(--body-color); 
+  align-items: stretch; 
+  margin: 0; 
+}
+
 /* SIDE MENU */
 .nav-tabs a {
   font-family: var(--header-font);
