@@ -1,19 +1,6 @@
 import './App.css';
 
-function SideMenu() {
-    function NavTab(prop) {
-        const onHover = function(isHovering){ 
-            return function(e) {
-                e.target.style.backgroundColor = isHovering ? "rgba(100,100,100,0.5)" : "transparent";
-                e.target.style.color = isHovering ? "var(--text-color)" : "var(--text-color)";
-            }
-        };
-
-        return (
-            <li onMouseEnter={onHover(true)} onMouseLeave={onHover(false)} style={{margin:"0.5rem 0"}}>{prop.name}</li>
-        );
-    }
-
+function SideMenu({ children }) {
     const gridStyle = { 
         display: "grid",
         gridTemplateRows: "4rem auto 3rem 10rem",
@@ -29,10 +16,7 @@ function SideMenu() {
         <nav className="side-menu" style={gridStyle}>
             <h1 style={{ marginBottom: "2rem", fontFamily: "var(--header-font)", textAlign: "right", fontSize: "2rem", fontWeight: "bold", textTransform: "none" }}>Hibiki Takaku</h1>
             <ul className="nav-tabs">
-                <NavTab name="Sites"/>
-                <NavTab name="Games"/>
-                <NavTab name="Art"/>
-                <NavTab name="Sounds"/>
+                { children }
             </ul>
             <div className="divider"></div>
             <footer style={{width: "230px", color: "var(--text-color)"}}>
