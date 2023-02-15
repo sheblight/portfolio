@@ -3,10 +3,10 @@ import './Main.css';
 import ReactPlayer from 'react-player';
 
 function Thumbnail(props) {
-    return <img style={{ width: "100%" }} className={props.className} src={require(`${props.src}`)} alt={props.alt} />;
+    return <img className={props.className} src={require(`${props.src}`)} alt={props.alt} />;
 }
 
-function Gallery(props) {
+function MiniGallery(props) {
     if (props.images.length === 0) {
         return null;
     }
@@ -34,7 +34,7 @@ function ProjectEntry(props) {
         <div className="project-entry">
             <div style={{ width: "50%" }}>
                 {content.videoId ? <ReactPlayer width={"100%"} url={content.videoId} /> : null}
-                <Gallery images={content.images} />
+                <MiniGallery images={content.images} />
             </div>
             <div style={{ width: "40%" }}>
                 <h2>{content.title}</h2>
@@ -44,15 +44,6 @@ function ProjectEntry(props) {
                 <p>{content.notes}</p>
                 <LinkButtonGroup links={content.links} />
             </div>
-        </div>
-    );
-}
-
-function ArtEntry(props) {
-    return (
-        <div className="art-entry">
-            <img src={require(`${props.content.src}`)} alt={props.content.alt} />
-            <p>{props.content.title}</p>
         </div>
     );
 }
@@ -74,8 +65,6 @@ function Entry(props) {
     switch (props.type) {
         case "Projects":
             return <ProjectEntry content={props.content} />;
-        case "Art":
-            return <ArtEntry content={props.content} />;
         case "Sound":
             return <SoundEntry content={props.content} />;
         default:
@@ -87,6 +76,13 @@ function EntryList(props) {
     const content = props.content;
     if (!content["entries"]) {
         return null;
+    }
+    else if (content.title === "Art") {
+        return (
+            <div className="art-entry">
+                {content.entries.map(image => <Thumbnail key={image.src} className={"thumbnail"} src={image.src} alt={image.alt} />)}
+            </div>
+        )
     }
     return (
         <ul>
