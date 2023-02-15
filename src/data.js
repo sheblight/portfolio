@@ -22,7 +22,7 @@ export const data = {
                 tags: [
                     "Games"
                 ],
-                video: "https://www.youtube.com/watch?v=299SVu_VObs",
+                videoId: "299SVu_VObs",
                 images: [
                     {
                         src: "./images/art/concept-backpacks-2.jpg",
@@ -38,7 +38,7 @@ export const data = {
                 links: [
                     {
                         title: "Steam Page",
-                        url: "https://store.steampowered.com/app/1192810/Romancelvania/"
+                        url: "https://store.steampowered.com/app/1955040/The_Aquatic_Messenger/"
                     }
                 ], 
                 technologies: [
@@ -48,7 +48,7 @@ export const data = {
                 tags: [
                     "Games"
                 ],
-                video: "https://www.youtube.com/watch?v=299SVu_VObs",
+                videoId: "",
                 images: [
                     {
                         src: "./images/art/concept-backpacks-2.jpg",

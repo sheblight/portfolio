@@ -1,18 +1,41 @@
 import './App.css';
+import YouTube from 'react-youtube';
+
+function Thumbnail(props) {
+    return <img className={props.className} src={require(`${props.src}`)} alt={props.alt}/>;
+}
+
+function Gallery(props) {
+    if (props.images.length === 0) {
+        return null;
+    }
+    return props.images.map(image => <Thumbnail key={image.src} className={"thumbnail"} src={image.src} alt={image.alt}/>);
+}
+
+function LinkButton(props) {
+    return <a target="_blank" rel="noreferrer" href={props.href}><button >{props.title}</button></a>;
+}
+
+function LinkButtonGroup(props) {
+    if (props.links.length === 0) {
+        return null;
+    }
+    return props.links.map(link => <LinkButton key={link.url} href={link.url} title={link.title}/>)
+}
 
 function ProjectEntry(props) {
     const content = props.content;
-    const embedVideo = (<div></div>);
-    const screenshot = (src, alt) => <img className="thumbnail" src={require(`${src}`)} alt={alt}/>;
+    const embedVideo = (content.videoId ? <YouTube videoId={content.videoId}/> : null);
     return (
         <div className="project-entry">
             <h2>{content.title}</h2>
             <div className="divider"></div>
+            <p>{content.role}</p>
             <p>{content.period}</p>
             {content.video !== "" ? embedVideo : null}
-            {content.images.length > 0 ? content.images.map(image => screenshot(image.src, image.alt)) : null}
+            <Gallery images={content.images}/>
             <p>{content.notes}</p>
-
+            <LinkButtonGroup links={content.links}/>
         </div>
     );
 }
@@ -37,7 +60,7 @@ function Entry(props) {
     } 
 }
 
-function Gallery(props) {
+function EntryList(props) {
     const content = props.content;
     if (!content["entries"]) {
         return null;
@@ -57,7 +80,7 @@ function Main(props) {
             <section>
                 <h1>{content.title}</h1>
                 <p>{content.caption}</p>
-                <Gallery content={content}/>
+                <EntryList content={content}/>
             </section>
         </main>
     );
