@@ -45,6 +45,12 @@ h1 {
   text-transform: uppercase;
 }
 
+h2 {
+  font-family: Outfit-Thin, var(--header-font);
+  color: var(--text-color);
+  font-size: 2rem;
+}
+
 .App {
   display: grid;
   grid-template-columns: 300px auto; 

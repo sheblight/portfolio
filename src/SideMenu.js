@@ -12,6 +12,7 @@ function SideMenu({ children }) {
         color: "var(--text-color)" 
     };
 
+    // TODO: create side menu css
     return (
         <nav className="side-menu" style={gridStyle}>
             <h1 style={{ marginBottom: "2rem", fontFamily: "var(--header-font)", textAlign: "right", fontSize: "2rem", fontWeight: "bold", textTransform: "none" }}>Hibiki Takaku</h1>

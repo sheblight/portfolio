@@ -5,18 +5,23 @@ import SideMenu from './SideMenu';
 import Main from './Main';
 import { useState } from 'react';
 
+
+function NavTabs(props) {
+  const pages = props.names;
+  const tabs = []
+  for (let i=0; i<pages.length; i++) {
+    tabs.push(<NavTab key={pages[i]} onclick={props.onclick(i)} name={pages[i]}/>);
+  }
+  return tabs;
+}
+
 function App() {
   const [index, setIndex] = useState(0);
-  const onClickTab = (index) => {
-    return ()=>{
-      setIndex(index) 
-    };
-  };
 
   return (
     <div className="App">
       <SideMenu>
-        { data.pages.map(page => <NavTab key={page.title} onclick={onClickTab(data.pages.indexOf(page))} name={page.title}/>) }
+        <NavTabs names={ data.pages.map(page => page.title) } onclick={ (index)=>()=>setIndex(index) }/>
       </SideMenu>
       <Main 
         content={data.pages} 
