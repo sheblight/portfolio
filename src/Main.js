@@ -1,9 +1,8 @@
 import './App.css';
-import YouTube from 'react-youtube';
 import ReactPlayer from 'react-player';
 
 function Thumbnail(props) {
-    return <img className={props.className} src={require(`${props.src}`)} alt={props.alt}/>;
+    return <img style={{width:"100%"}} className={props.className} src={require(`${props.src}`)} alt={props.alt}/>;
 }
 
 function Gallery(props) {
@@ -26,17 +25,20 @@ function LinkButtonGroup(props) {
 
 function ProjectEntry(props) {
     const content = props.content;
-    const embedVideo = (content.videoId ? <YouTube videoId={content.videoId}/> : null);
     return (
         <div className="project-entry">
-            <h2>{content.title}</h2>
-            <div className="divider"></div>
-            <p>{content.role}</p>
-            <p>{content.period}</p>
-            {content.video !== "" ? embedVideo : null}
-            <Gallery images={content.images}/>
-            <p>{content.notes}</p>
-            <LinkButtonGroup links={content.links}/>
+            <div style={{width:"50%"}}>
+                {content.videoId ? <ReactPlayer width={"100%"} url={content.videoId}/> : null}
+                <Gallery images={content.images}/>
+            </div>
+            <div style={{width:"40%"}}>
+                <h2>{content.title}</h2>
+                <div className="divider"></div>
+                <p>{content.role}</p>
+                <p>{content.period}</p>
+                <p>{content.notes}</p>
+                <LinkButtonGroup links={content.links}/>
+            </div>
         </div>
     );
 }

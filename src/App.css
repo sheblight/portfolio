@@ -103,9 +103,13 @@ section img {
   margin-top: 2rem;
   border: 3px solid var(--text-color);
 }
-
+.project-entry {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem auto;
+}
 .sound-entry {
   display: flex;
   gap: 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem auto;
 }

@@ -6,7 +6,7 @@ export const data = {
         entries:[
             {
                 title: "Romancelvania",
-                role: "Programmer",
+                role: "Gameplay Programmer",
                 period: "May 2021 ~ October 2022",
                 notes: "Designed and scripted attack behaviors for boss battles",
                 links: [
@@ -22,7 +22,7 @@ export const data = {
                 tags: [
                     "Games"
                 ],
-                videoId: "299SVu_VObs",
+                videoId: "https://www.youtube.com/watch?v=299SVu_VObs&t=1s",
                 images: [
                     {
                         src: "./images/art/concept-backpacks-2.jpg",
@@ -32,9 +32,9 @@ export const data = {
             },
             {
                 title: "The Aquatic Messenger",
-                role: "Programmer",
-                period: "September 2020 ~ May 2022",
-                notes: "Designed and scripted attack behaviors for boss battles",
+                role: "Lead Programmer/Game Designer",
+                period: "Fall 2020 ~ May 2022",
+                notes: "Implemented an interactive tutorial system, documented and designed the overarching game flow, organized production meetings and assigned tasks to team members.",
                 links: [
                     {
                         title: "Steam Page",
