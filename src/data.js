@@ -59,10 +59,6 @@ export const data = {
         ],
         },
         {
-        title: "Sites",
-        caption: "Some sites developed in 2023"
-        },
-        {
         title: "Art",
         caption: "Some illustrations and models made over time",
         entries:[
