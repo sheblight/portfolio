@@ -12,8 +12,8 @@ function SiteEntry(props) {
 function ArtEntry(props) {
     return (
         <div>
-            <img src="" alt=""/>
-            <h2>A picture entry</h2>
+            <img src={require(`${props.content.src}`)} alt={props.content.title}/>
+            <p>{props.content.title}</p>
         </div>
     );
 }
@@ -21,12 +21,25 @@ function ArtEntry(props) {
 function Entry(props) {
     switch(props.type) {
         case "Sites":
-            return <SiteEntry/>;
+            return <SiteEntry content={props.content}/>;
         case "Art":
-            return <ArtEntry/>;
+            return <ArtEntry content={props.content}/>;
         default:
             return null;
     } 
+}
+
+function Gallery(props) {
+    const content = props.content;
+    if (!content["entries"]) {
+        return null;
+    }
+    return (
+        <ul>
+            {content.entries.map(entry => <Entry key={entry.title} type={content.title} content={entry}/>)}
+        </ul>
+    );
+    
 }
 
 function Main(props) {
@@ -36,9 +49,7 @@ function Main(props) {
             <section>
                 <h1>{content.title}</h1>
                 <p>{content.caption}</p>
-                <ul>
-                    <Entry type={content.title} index={0}/>
-                </ul>
+                <Gallery content={content}/>
             </section>
         </main>
     );
