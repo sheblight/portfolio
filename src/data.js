@@ -117,7 +117,19 @@ export const data = {
         },
         {
         title: "Sound",
-        caption: "Some music composed over time"
+        caption: "Some music composed over time",
+        entries: [
+            {
+                title: "Personal Tracks",
+                notes: "Some tracks I composed over time as a hobby.",
+                url: "https://soundcloud.com/hibiki-takaku/sets/heb?si=e6988e48e77d44098a3fb1c0a161725d&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+            },
+            {
+                title: "Wiltune",
+                notes: "Background music composed for Wiltune.",
+                url: "https://soundcloud.com/hibiki-takaku/sets/wiltune-ost?si=e6988e48e77d44098a3fb1c0a161725d&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+            }
+        ]
         },
     ],
 };

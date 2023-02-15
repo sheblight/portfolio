@@ -1,5 +1,6 @@
 import './App.css';
 import YouTube from 'react-youtube';
+import ReactPlayer from 'react-player';
 
 function Thumbnail(props) {
     return <img className={props.className} src={require(`${props.src}`)} alt={props.alt}/>;
@@ -49,12 +50,27 @@ function ArtEntry(props) {
     );
 }
 
+function SoundEntry(props) {
+    return (
+        <div className="sound-entry">
+            <ReactPlayer width={"50%"} url={props.content.url}/>
+            <div>
+                <h2>{props.content.title}</h2>
+                <div className="divider"></div>
+                <p>{props.content.notes}</p>
+            </div>
+        </div>
+    );
+}
+
 function Entry(props) {
     switch(props.type) {
         case "Projects":
             return <ProjectEntry content={props.content}/>;
         case "Art":
             return <ArtEntry content={props.content}/>;
+        case "Sound":
+            return <SoundEntry content={props.content}/>;
         default:
             return null;
     } 
