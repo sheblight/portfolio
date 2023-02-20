@@ -30,13 +30,15 @@ function LinkButtonGroup(props) {
     return props.links.map(link => <LinkButton key={link.url} href={link.url} title={link.title} />)
 }
 
+//{content.images.length === 1 ? <Thumbnail src={content.images[0].original} alt={content.images[0].originalAlt}/> : null}
 function ProjectEntry(props) {
     const content = props.content;
     return (
         <div className="project-entry">
             <div style={{ width: "50%" }}>
                 {content.videoId ? <ReactPlayer width={"100%"} url={content.videoId} /> : null}
-                {content.images.length > 0 ? <ImageGallery items={content.images} /> : null}
+                {content.images.length === 1 ? <img className={"thumbnail"} src={content.images[0].original} alt={content.images[0].originalAlt} />: null}
+                {content.images.length > 1 ? <ImageGallery items={content.images} /> : null}
             </div>
             <div style={{ width: "40%" }}>
                 <h2>{content.title}</h2>

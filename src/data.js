@@ -59,6 +59,105 @@ export const data = {
                         originalHeight: "500px",
                     },
                 ],
+            },
+            {
+                title: "Stalagmic",
+                role: "Level Designer/Programmer",
+                period: "October 2020 ~ December 2020",
+                notes: "A third person 3D isometric puzzle game where you navigate through the cave by singing into your microphone.\nAs a level designer, I explored unique puzzle mechanics that utilized the player's microphone.",
+                links: [
+                    {
+                        title: "Link to Game",
+                        url: "https://store.steampowered.com/app/1955040/The_Aquatic_Messenger/"
+                    }
+                ], 
+                technologies: [
+                    "Unreal Engine 4",
+                    "Perforce"
+                ],
+                tags: [
+                    "Games"
+                ],
+                videoId: "",
+                images: [
+                    {
+                        original: process.env.PUBLIC_URL + "/images/test.jpg",
+                        thumbnail: process.env.PUBLIC_URL + "/images/test.jpg",
+                        originalAlt: "Screenie",
+                        originalHeight: "500px",
+                    },
+                    {
+                        original: process.env.PUBLIC_URL + "/images/test2.jpg",
+                        thumbnail: process.env.PUBLIC_URL + "/images/test2.jpg",
+                        originalAlt: "Screenie2",
+                        originalHeight: "500px",
+                    },
+                ],
+            },
+            {
+                title: "Wiltune",
+                role: "Programmer / Lead Audio",
+                period: "Fall 2020 ~ May 2022",
+                notes: "Winner of Artistic Excellence Award and Audience Choice Award at Gamefest 2020 hosted by RPI.\n\nA third person stealth and puzzle game where you play as a desert thief who manipulates time in order to steal magical, musical artifacts.\nI designed a minigame system that the player interacts with throughout the heist and implemented an adaptive music system to complement with the gameplay.",
+                links: [
+                    {
+                        title: "Link to Game",
+                        url: "https://store.steampowered.com/app/1955040/The_Aquatic_Messenger/"
+                    }
+                ], 
+                technologies: [
+                    "Unreal Engine 4",
+                    "Perforce"
+                ],
+                tags: [
+                    "Games"
+                ],
+                videoId: "",
+                images: [
+                    {
+                        original: process.env.PUBLIC_URL + "/images/test.jpg",
+                        thumbnail: process.env.PUBLIC_URL + "/images/test.jpg",
+                        originalAlt: "Screenie",
+                        originalHeight: "500px",
+                    },
+                    {
+                        original: process.env.PUBLIC_URL + "/images/test2.jpg",
+                        thumbnail: process.env.PUBLIC_URL + "/images/test2.jpg",
+                        originalAlt: "Screenie2",
+                        originalHeight: "500px",
+                    },
+                ],
+            },
+            {
+                title: "Other Games",
+                role: "",
+                period: "Spring 2019 ~ Present",
+                notes: "Other games I've contributed to can be viewed on my itch profile.",
+                links: [
+                    {
+                        title: "Itch Link",
+                        url: "https://store.steampowered.com/app/1955040/The_Aquatic_Messenger/"
+                    }
+                ], 
+                technologies: [
+                    "Unity",
+                    "Unreal Engine 4",
+                    "Phaser",
+                    "Github",
+                    "Perforce"
+                ],
+                tags: [
+                    "Games"
+                ],
+                videoId: "",
+                images: [
+                    {
+                        original: process.env.PUBLIC_URL + "/images/test2.jpg",
+                        thumbnail: process.env.PUBLIC_URL + "/images/test2.jpg",
+                        originalAlt: "Screenie2",
+                        originalHeight: "500px",
+                    },
+                ],
             }
         ],
         },
