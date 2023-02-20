@@ -1,6 +1,7 @@
 import './App.css';
 import './Main.css';
 import ReactPlayer from 'react-player';
+import ImageGallery from 'react-image-gallery';
 
 function Thumbnail(props) {
     return <img className={props.className} src={require(`${props.src}`)} alt={props.alt} />;
@@ -10,7 +11,8 @@ function MiniGallery(props) {
     if (props.images.length === 0) {
         return null;
     }
-    return props.images.map(image => <Thumbnail key={image.src} className={"thumbnail"} src={image.src} alt={image.alt} />);
+    return <ImageGallery items={props.images}/>
+    //return props.images.map(image => <Thumbnail key={image.src} className={"thumbnail"} src={image.src} alt={image.alt} />);
 }
 
 function LinkButton(props) {
@@ -34,7 +36,7 @@ function ProjectEntry(props) {
         <div className="project-entry">
             <div style={{ width: "50%" }}>
                 {content.videoId ? <ReactPlayer width={"100%"} url={content.videoId} /> : null}
-                <MiniGallery images={content.images} />
+                <ImageGallery items={content.images} />
             </div>
             <div style={{ width: "40%" }}>
                 <h2>{content.title}</h2>

@@ -1,3 +1,6 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+
 main img {
     width: 100%;
     border: 3px solid var(--text-color);
@@ -7,6 +10,10 @@ main img {
     display: flex;
     gap: 2rem;
     margin: 2rem auto;
+}
+
+.project-entry img {
+    border: none;
 }
 
 .art-entry {
