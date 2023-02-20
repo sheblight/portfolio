@@ -24,20 +24,6 @@ export const data = {
                 ],
                 videoId: "https://www.youtube.com/watch?v=299SVu_VObs&t=1s",
                 images: [
-                    {
-                        original: process.env.PUBLIC_URL + "/images/test.jpg",
-                        thumbnail: process.env.PUBLIC_URL + "/images/test.jpg",
-                        originalAlt: "Screenie",
-                        originalHeight: "500px",
-                    },
-                    ///*
-                    {
-                        original: process.env.PUBLIC_URL + "/images/test2.jpg",
-                        thumbnail: process.env.PUBLIC_URL + "/images/test2.jpg",
-                        originalAlt: "Screenie2",
-                        originalHeight: "500px",
-                    },
-                    //*/
                 ],
             },
             {
@@ -63,12 +49,14 @@ export const data = {
                     {
                         original: process.env.PUBLIC_URL + "/images/test.jpg",
                         thumbnail: process.env.PUBLIC_URL + "/images/test.jpg",
-                        originalAlt: "Screenie"
+                        originalAlt: "Screenie",
+                        originalHeight: "500px",
                     },
                     {
                         original: process.env.PUBLIC_URL + "/images/test2.jpg",
                         thumbnail: process.env.PUBLIC_URL + "/images/test2.jpg",
-                        originalAlt: "Screenie2"
+                        originalAlt: "Screenie2",
+                        originalHeight: "500px",
                     },
                 ],
             }

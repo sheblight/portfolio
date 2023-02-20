@@ -36,7 +36,7 @@ function ProjectEntry(props) {
         <div className="project-entry">
             <div style={{ width: "50%" }}>
                 {content.videoId ? <ReactPlayer width={"100%"} url={content.videoId} /> : null}
-                <ImageGallery items={content.images} />
+                {content.images.length > 0 ? <ImageGallery items={content.images} /> : null}
             </div>
             <div style={{ width: "40%" }}>
                 <h2>{content.title}</h2>
