@@ -50,7 +50,7 @@ h1 {
   margin: 5px 0;
   font-family: Outfit-Thin, var(--header-font);
   color: var(--text-color);
-  font-size: 5rem;
+  font-size: min(15vw, 5rem);
   font-weight: 200;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -59,7 +59,7 @@ h1 {
 h2 {
   font-family: Outfit-Thin, var(--header-font);
   color: var(--text-color);
-  font-size: 2rem;
+  font-size: min(10vw, 2rem);
 }
 
 .App {
