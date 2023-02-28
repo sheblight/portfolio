@@ -6,14 +6,34 @@ main img {
     border: 3px solid var(--text-color);
 }
 
+section {
+    width: max(500px, 90%);
+    margin: 0 auto;
+}
+
 .project-entry {
     display: flex;
-    gap: 2rem;
-    margin: 2rem auto;
+    flex-wrap: wrap;
+    gap: 0 2rem;
+    margin: 6rem auto;
 }
 
 .project-entry img {
     border: none;
+}
+
+.thumbnail {
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+
+.description {
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+
+.description h2 {
+    margin: 1rem 0;
 }
 
 .art-entry {
