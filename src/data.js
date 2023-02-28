@@ -47,15 +47,9 @@ export const data = {
                 videoId: "",
                 images: [
                     {
-                        original: process.env.PUBLIC_URL + "/images/test.jpg",
-                        thumbnail: process.env.PUBLIC_URL + "/images/test.jpg",
+                        original: process.env.PUBLIC_URL + "/images/thumbnails/tam-01.jpg",
+                        thumbnail: process.env.PUBLIC_URL + "/images/thumbnails/tam-01.jpg",
                         originalAlt: "Screenie",
-                        originalHeight: "500px",
-                    },
-                    {
-                        original: process.env.PUBLIC_URL + "/images/test2.jpg",
-                        thumbnail: process.env.PUBLIC_URL + "/images/test2.jpg",
-                        originalAlt: "Screenie2",
                         originalHeight: "500px",
                     },
                 ],
@@ -81,15 +75,9 @@ export const data = {
                 videoId: "",
                 images: [
                     {
-                        original: process.env.PUBLIC_URL + "/images/test.jpg",
-                        thumbnail: process.env.PUBLIC_URL + "/images/test.jpg",
+                        original: process.env.PUBLIC_URL + "/images/thumbnails/stalagmic-01.jpg",
+                        thumbnail: process.env.PUBLIC_URL + "/images/thumbnails/stalagmic-01.jpg",
                         originalAlt: "Screenie",
-                        originalHeight: "500px",
-                    },
-                    {
-                        original: process.env.PUBLIC_URL + "/images/test2.jpg",
-                        thumbnail: process.env.PUBLIC_URL + "/images/test2.jpg",
-                        originalAlt: "Screenie2",
                         originalHeight: "500px",
                     },
                 ],
@@ -115,15 +103,9 @@ export const data = {
                 videoId: "",
                 images: [
                     {
-                        original: process.env.PUBLIC_URL + "/images/test.jpg",
-                        thumbnail: process.env.PUBLIC_URL + "/images/test.jpg",
+                        original: process.env.PUBLIC_URL + "/images/thumbnails/wiltune-01.jpg",
+                        thumbnail: process.env.PUBLIC_URL + "/images/thumbnails/wiltune-01.jpg",
                         originalAlt: "Screenie",
-                        originalHeight: "500px",
-                    },
-                    {
-                        original: process.env.PUBLIC_URL + "/images/test2.jpg",
-                        thumbnail: process.env.PUBLIC_URL + "/images/test2.jpg",
-                        originalAlt: "Screenie2",
                         originalHeight: "500px",
                     },
                 ],
@@ -152,8 +134,8 @@ export const data = {
                 videoId: "",
                 images: [
                     {
-                        original: process.env.PUBLIC_URL + "/images/test2.jpg",
-                        thumbnail: process.env.PUBLIC_URL + "/images/test2.jpg",
+                        original: process.env.PUBLIC_URL + "/images/thumbnails/miscgames-01.jpg",
+                        thumbnail: process.env.PUBLIC_URL + "/images/thumbnails/miscgames-01.jpg",
                         originalAlt: "Screenie2",
                         originalHeight: "500px",
                     },

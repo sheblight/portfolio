@@ -7,13 +7,6 @@ function Thumbnail(props) {
     return <img className={props.className} src={require(`${props.src}`)} alt={props.alt} />;
 }
 
-function MiniGallery(props) {
-    if (props.images.length === 0) {
-        return null;
-    }
-    return <ImageGallery items={props.images}/>
-    //return props.images.map(image => <Thumbnail key={image.src} className={"thumbnail"} src={image.src} alt={image.alt} />);
-}
 
 function LinkButton(props) {
     return (
