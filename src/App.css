@@ -16,7 +16,7 @@
 :root {
   --transparent: rgba(0,0,0,0);
   --body-color: linear-gradient(rgb(22, 12, 12), rgb(25, 43, 35), rgb(49, 68, 64) 80%);
-  --menu-color: linear-gradient(rgba(0,0,0,0.6),rgba(68, 30, 30, 0.4),rgba(80, 8, 8, 0.6));
+  --menu-color: linear-gradient(rgb(0 0 0),rgb(36 15 15),rgb(55 17 17));
   --text-color: #cccac3;
   --header-font: 'Outfit', 'Courier New', Courier, monospace;
 }
@@ -39,8 +39,6 @@
 .bold {
   font-weight: bold;
 }
-
-
 
 p {
   color: var(--text-color);
@@ -119,16 +117,31 @@ footer a:hover {
   background-color: var(--transparent);
 }
 
+svg.menu {
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  width: 40px;
+  height: 40px;
+  fill: var(--text-color);
+}
+
 @media screen and (max-width: 800px) {
   .App {
     grid-template-columns: auto;
   }
   
   nav {
-    display: none;
+    position: fixed;
+    float: left;
+    width: min(100vw, 500px);
+    height: 100vh;
+    translate: -100%;
   }
 
-  main svg {
+  svg.menu {
     display: block;
   }
 }
+
