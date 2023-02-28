@@ -11,7 +11,7 @@ section {
     margin: 0 auto;
 }
 
-.project-entry {
+.project-entry, .sound-entry {
     display: flex;
     flex-wrap: wrap;
     gap: 0 2rem;
@@ -47,9 +47,8 @@ section {
 }
 
 .sound-entry {
-    display: flex;
-    gap: 2rem;
-    margin: 2rem auto;
+    flex-wrap: wrap-reverse;
+    margin: 3rem auto;
 }
 
 main button {

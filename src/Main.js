@@ -48,8 +48,10 @@ function ProjectEntry(props) {
 function SoundEntry(props) {
     return (
         <div className="sound-entry">
-            <ReactPlayer width={"50%"} url={props.content.url} />
-            <div>
+            <div className="thumbnail">
+                <ReactPlayer width={"100%"} url={props.content.url} />
+            </div>
+            <div className="description">
                 <h2>{props.content.title}</h2>
                 <div className="divider"></div>
                 <p>{props.content.notes}</p>

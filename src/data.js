@@ -62,7 +62,7 @@ export const data = {
                 links: [
                     {
                         title: "Link to Game",
-                        url: "https://store.steampowered.com/app/1955040/The_Aquatic_Messenger/"
+                        url: "https://xavier-marshall.itch.io/stalagmic"
                     }
                 ], 
                 technologies: [
@@ -90,7 +90,7 @@ export const data = {
                 links: [
                     {
                         title: "Link to Game",
-                        url: "https://store.steampowered.com/app/1955040/The_Aquatic_Messenger/"
+                        url: "https://xavier-marshall.itch.io/wiltune"
                     }
                 ], 
                 technologies: [
@@ -118,7 +118,7 @@ export const data = {
                 links: [
                     {
                         title: "Itch Link",
-                        url: "https://store.steampowered.com/app/1955040/The_Aquatic_Messenger/"
+                        url: "https://sheblight.itch.io/"
                     }
                 ], 
                 technologies: [
