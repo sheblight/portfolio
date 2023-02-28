@@ -1,20 +1,10 @@
 import './App.css';
 
 function SideMenu({ children }) {
-    const gridStyle = { 
-        display: "grid",
-        gridTemplateRows: "4rem auto 3rem 10rem",
-        padding: "1.5rem",
-        borderRight: "5px dashed var(--text-color)", 
-        background: "var(--menu-color)", 
-        textAlign: "right", 
-        fontSize: "1.5rem", 
-        color: "var(--text-color)" 
-    };
 
     // TODO: create side menu css
     return (
-        <nav className="side-menu" style={gridStyle}>
+        <nav className="side-menu">
             <h1 style={{ marginBottom: "2rem", fontFamily: "var(--header-font)", textAlign: "right", fontSize: "2rem", fontWeight: "bold", textTransform: "none" }}>Hibiki Takaku</h1>
             <ul className="nav-tabs">
                 { children }

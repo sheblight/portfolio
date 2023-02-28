@@ -21,6 +21,7 @@
   --header-font: 'Outfit', 'Courier New', Courier, monospace;
 }
 
+
 /*My page*/
 .hidden {
   display: none;
@@ -49,7 +50,7 @@ h1 {
   margin: 5px 0;
   font-family: Outfit-Thin, var(--header-font);
   color: var(--text-color);
-  font-size: 80px;
+  font-size: 5rem;
   font-weight: 200;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -72,6 +73,18 @@ h2 {
 }
 
 /* SIDE MENU */
+nav {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-rows: 4rem auto 3rem 10rem;
+  padding: 1.5rem;
+  border-right: 5px dashed var(--text-color);
+  background: var(--menu-color);
+  text-align: right;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
 .nav-tabs a {
   font-family: var(--header-font);
   text-decoration: none;
@@ -104,4 +117,18 @@ footer a:hover {
   border-radius: 100%;
   color: var(--text-color);
   background-color: var(--transparent);
+}
+
+@media screen and (max-width: 800px) {
+  .App {
+    grid-template-columns: auto;
+  }
+  
+  nav {
+    display: none;
+  }
+
+  main svg {
+    display: block;
+  }
 }

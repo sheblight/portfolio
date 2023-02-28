@@ -1,5 +1,13 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
+main svg {
+    display: none;
+    position: absolute;
+    top: 30px;
+    width: 40px;
+    height: 40px;
+    fill: var(--text-color);
+}
 
 main img {
     width: 100%;
@@ -7,8 +15,13 @@ main img {
 }
 
 section {
-    width: max(500px, 90%);
+    width: clamp(300px, 90%, 1000px);
     margin: 0 auto;
+}
+
+section ul {
+    padding-left: 0;
+
 }
 
 .project-entry, .sound-entry {
@@ -20,6 +33,10 @@ section {
 
 .project-entry img {
     border: none;
+}
+
+.project-entry:first-of-type {
+    margin-top: 3rem;
 }
 
 .thumbnail {
@@ -65,3 +82,9 @@ main button {
 main button:hover {
     background-color: rgba(139, 158, 108, 0.247)
 }
+
+@media screen and (max-width: 1000px) {  
+    div.art-entry {
+      column-count: 1;
+    }
+  }
