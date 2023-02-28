@@ -22,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "http://sheblight.github.io/portfolio",
+  "homepage": "http://www.hibikitakaku.com",
   "eslintConfig": {
     "extends": [
       "react-app",
